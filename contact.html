@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Contact Cafe Da Daniel</title>
+        </head>
+        <body>
+            <body style="background-color: #ff5f5f;"></body>
+             <div style="
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    background-image: url('images/Copilot_20260602_211507.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;">
+    <a href="index.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Home</button>
+    </a>
+
+    <a href="menu.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Menu</button>
+    </a>
+
+    <a href="about.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">About us</button>
+    </a>
+
+     <a href="contact.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Contact us</button>
+    </a>
+</div>
+<h1 style="font-size: 75px; font-family: 'Courier New', Courier, monospace; text-align: center;"> Contact Cafe Da Daniel</h1>
+<h1 style="font-size: 40px; font-family: 'Courier New', Courier, monospace; text-align: center;"> Phone number: +61 0412345678</h1>
+<h1 style="font-size: 40px; font-family: 'Courier New', Courier, monospace; text-align: center;"> Email:daniel.hanna@gmail.com</h1>
+<div style="font-family: 'Courier New', Courier, monospace;">
+<div class="contact-form">
+
+  <div style="width:350px; margin:40px auto; padding:20px; background:#ff5f5f; border:2px solid black; border-radius:10px; font-family:Arial;">
+
+  <h2 style="text-align:center;">Contact Us</h2>
+
+  <!-- Question 1 -->
+  <label style="font-weight:bold;">Why are you contacting us?</label>
+
+  <div style="margin:10px 0;">
+    <div><label><input type="radio" name="reason" value="suggestment"> Suggestment</label></div>
+    <div><label><input type="radio" name="reason" value="complain"> Complain</label></div>
+    <div><label><input type="radio" name="reason" value="report"> Report</label></div>
+    <div><label><input type="radio" name="reason" value="report"> Compliment</label></div>
+    <div><label><input type="radio" name="reason" value="other"> Other</label></div>
+  </div>
+
+  <!-- Other text box -->
+  <div id="other-box" style="display:none; margin-bottom:15px;">
+    <input type="text" placeholder="Type your reason" 
+           style="width:95%; padding:8px; border-radius:6px; border:1px solid #333;">
+  </div>
+
+  <!-- Question 2 -->
+  <label style="font-weight:bold;">What would you like to tell us?</label>
+  <textarea placeholder="Write your message..." 
+            style="width:95%; height:100px; padding:8px; border-radius:6px; border:1px solid #333; margin-top:8px;"></textarea>
+
+  <button style="margin-top:15px; padding:10px 20px; background:black; color:#ff5f5f; border:none; border-radius:6px; cursor:pointer;">
+    Send
+  </button>
+
+</div>
+
+<script>
+  const radios = document.querySelectorAll('input[name="reason"]');
+  const otherBox = document.getElementById('other-box');
+
+  radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      otherBox.style.display = radio.value === 'other' ? 'block' : 'none';
+    });
+  });
+</script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Cafe Da Daniel</Title>
+    </head>
+    <body>
+        <body style="background-color: #ff5f5f;"></body>
+         <div style="
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    background-image: url('images/Copilot_20260602_211507.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-top: 7px;">
+    
+
+    <a href="index.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Home</button>
+    </a>
+
+    <a href="menu.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Menu</button>
+    </a>
+
+    <a href="about.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">About us</button>
+    </a>
+
+     <a href="contact.html" style="display: inline-block;">
+        <button style="
+            font-size: 50px;
+            background-color: rgb(250, 50, 50);
+            border: 3px solid rgb(255, 255, 65);
+            margin: 20px;
+            margin-right: 35px;
+        ">Contact us</button>
+    </a>
+</div>
+<h1 style="font-size: 75px; font-family: 'Courier New', Courier, monospace; text-align: center; margin-top: 10px;margin-bottom: 10px;">Cafe Da Daniel</h1>
+<div id="carousel" style="
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;">
+
+    <!-- IMAGE -->
+    <img id="slide" 
+         src="images/img1.png" 
+         style="width: 100%; height: 100%; object-fit: cover;">
+
+    <!-- LEFT BUTTON -->
+    <button onclick="prevSlide()" style="
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 50px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    ">&#60;</button>
+
+    <!-- RIGHT BUTTON -->
+    <button onclick="nextSlide()" style="
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 50px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    ">&#62;</button>
+
+</div>
+
+<script src="carousel.js"></script>
+
+
+
+    </body>
+</html>
